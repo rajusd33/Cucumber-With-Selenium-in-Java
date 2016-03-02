@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="39.88204">
+<testcase classname="Navigation and verify Size, Width Selection controls" name="Navigatioin and Verify if size and width selection are displayed" time="18.449849">
+<system-out><![CDATA[Given User has Navigated to Zappos home page................................passed
+When User selects "Shoes" from Shop Men's...................................passed
+And Select "Boots" from from Men's Shoes....................................passed
+Then A new page should appear with title "Boots, Men | Shipped Free at Zappos".passed
+When User select "Keen Utility" from brand menu.............................passed
+And Select "Pittsburgh Boot" boots from the list............................passed
+Then Browser should navigate to Add to cart page............................passed
+When user select Add to cart without selecting size/width...................passed
+Then Please select a Size and Please select a width appear..................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verify &quot;Dont See your Size&quot; link and complete popup Window" name="Verify &quot;Dont See your Size&quot; link and complete popup Window" time="21.432191">
+<system-out><![CDATA[Given User has Navigated to Zappos home page................................passed
+When User selects "Shoes" from Shop Men's...................................passed
+And Select "Boots" from from Men's Shoes....................................passed
+Then A new page should appear with title "Boots, Men | Shipped Free at Zappos".passed
+When User select "Keen Utility" from brand menu.............................passed
+And Select "Pittsburgh Boot" boots from the list............................passed
+Then Browser should navigate to Add to cart page............................passed
+When click on Don't see your size Link......................................passed
+Then Notify me Popup display................................................passed
+When Fill Notify me with Email "test@gmail.com".............................passed
+And Color with "Raven/Yellow"...............................................passed
+And Size with "9"...........................................................passed
+And Width with "EE - Wide"..................................................passed
+And Select Notify me........................................................passed
+Then Acknowledgement page displayed with Thank You..........................passed
+]]></system-out>
+</testcase>
+</testsuite>
